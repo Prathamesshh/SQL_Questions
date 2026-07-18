@@ -14,4 +14,5 @@ This is a repository for all the sql questions solved
 | [0184-department-highest-salary](https://github.com/Prathamesshh/SQL_Questions/tree/master/0184-department-highest-salary) |
 | [0511-game-play-analysis-i](https://github.com/Prathamesshh/SQL_Questions/tree/master/0511-game-play-analysis-i) |
 | [0586-customer-placing-the-largest-number-of-orders](https://github.com/Prathamesshh/SQL_Questions/tree/master/0586-customer-placing-the-largest-number-of-orders) |
+| [1084-sales-analysis-iii](https://github.com/Prathamesshh/SQL_Questions/tree/master/1084-sales-analysis-iii) |
 <!---LeetCode Topics End-->
