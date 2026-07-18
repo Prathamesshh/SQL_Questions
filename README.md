@@ -8,4 +8,5 @@ This is a repository for all the sql questions solved
 | ------- |
 | [0177-nth-highest-salary](https://github.com/Prathamesshh/SQL_Questions/tree/master/0177-nth-highest-salary) |
 | [0178-rank-scores](https://github.com/Prathamesshh/SQL_Questions/tree/master/0178-rank-scores) |
+| [0181-employees-earning-more-than-their-managers](https://github.com/Prathamesshh/SQL_Questions/tree/master/0181-employees-earning-more-than-their-managers) |
 <!---LeetCode Topics End-->
