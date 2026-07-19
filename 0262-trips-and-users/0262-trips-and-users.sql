@@ -1,17 +1,13 @@
 SELECT 
-  request_at AS Day, 
-  ROUND(
-    SUM(status != 'completed') / COUNT(*), 
-    2
-  ) AS 'Cancellation Rate' 
+    t.request_at AS Day,
+    ROUND(SUM(t.status != 'completed') / COUNT(*), 2) AS `Cancellation Rate`
 FROM 
-  Trips 
-  LEFT JOIN Users AS Clients ON Trips.client_id = Clients.users_id 
-  LEFT JOIN Users AS Drivers ON Trips.driver_id = Drivers.users_id 
+    Trips t
+JOIN 
+    Users c ON t.client_id = c.users_id AND c.banned = 'No'
+JOIN 
+    Users d ON t.driver_id = d.users_id AND d.banned = 'No'
 WHERE 
-  Clients.banned = 'No' 
-  AND Drivers.banned = 'No' 
-  AND request_at BETWEEN '2013-10-01' 
-  AND '2013-10-03' 
+    t.request_at BETWEEN '2013-10-01' AND '2013-10-03'
 GROUP BY 
-  Day
+    t.request_at;
